@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+body > header {
+    background-color: #225daf;
+    padding: 16px 0;
+    color: #f5f6fa;
+}
+
+body {
+    background-color: #acc7ec;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+header li a {
+    color: #f5f6fa;
+    text-decoration: none;
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+}
+
+#sobre-a-loja img {
+    margin-right: 32px;
+}
+
+#sobre-a-loja {
+    margin-top: 40px;
+}
+
+#sobre-a-loja p {
+    text-align: justify;
+}
+
+
+#sobre-a-loja h2 {
+    border-bottom-style: solid;
+    color: #0b52d4;
+    margin-bottom: 32px;
+}
+
+.produto img {
+    max-width: 100%;
+}
+
+#prod h2 {
+    margin-bottom: 32px;
+    margin-top: 48px;
+    border-bottom-style: solid;
+    color: #0b52d4;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 23.5%);
+    column-gap: 2%;
+    row-gap: 5%;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #2a67d8;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 16px;
+}
+
+.price {
+    margin: 16px 0;
+    display: block;
+}
+
+
+.produtos h3 {
+    margin: 16px 0;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 640px) {
+
+    header li {
+        display: flex;
+    }
+
+    #sobre-a-loja img {
+        margin-bottom: 32px;
+        height: 280px;
+    }
+
+    .container {
+        max-width: 90%;
+        display: block;
+    }
+
+    .produtos {
+        display: block;
+    }
+
+    .produtos .produto {
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+    .container {
+        max-width: 90%;
+        display: block
+    }
+
+    #sobre-a-loja img {
+        margin-bottom: 32px;
+        height: 540px;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+        row-gap: 5%;
+    }
+}
